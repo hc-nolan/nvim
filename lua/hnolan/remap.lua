@@ -1,8 +1,5 @@
 vim.g.mapleader = " "
 
--- redo
-vim.keymap.set("n", "<leader>r", vim.cmd.redo, { desc = "Redo" })
-
 -- BUFFER
 vim.keymap.set("n", "<leader>[", vim.cmd.bp, { desc = "Next buffer" })
 vim.keymap.set("n", "<leader>]", vim.cmd.bn, { desc = "Previous buffer" })
@@ -58,8 +55,9 @@ vim.keymap.set({ "n", "v" }, "<leader>tt", ":term zsh<CR>a", { desc = "Open term
 -- map <Esc> to exit terminal mode
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 
--- Open LSP diagnostic message
+-- LSP
 vim.keymap.set("n", "<leader>e", ":lua vim.diagnostic.open_float()<CR>", { desc = "Open LSP diagnostics" })
+vim.keymap.set({ "n", "v" }, "<leader>r", ":lua vim.lsp.buf.rename()<CR>", { desc = "LSP: Rename current object" })
 
 -- folds
 vim.keymap.set("n", "<leader>zo", "zO", { desc = "Recursively open all folds under cursor" })
