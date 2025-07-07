@@ -60,6 +60,8 @@ vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 
 -- Open LSP diagnostic message
 vim.keymap.set("n", "<leader>e", ":lua vim.diagnostic.open_float()<CR>", { desc = "Open LSP diagnostics" })
+-- Go to next LSP diagnostic
+vim.keymap.set("n", "<leader>x", ":lua vim.diagnostic.goto_next()<CR>", { desc = "Goto next LSP diagnostic" })
 
 -- folds
 vim.keymap.set("n", "<leader>zo", "zO", { desc = "Recursively open all folds under cursor" })
