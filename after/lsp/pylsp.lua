@@ -20,7 +20,7 @@ return {
           report_progress = true,
           live_mode = false,
         },
-        pyflakes = { enabled = false },
+        pyflakes = { enabled = true },
         pylint = { enabled = false },
         pycodestyle = {
           maxLineLength = 100,
