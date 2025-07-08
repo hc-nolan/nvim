@@ -20,15 +20,8 @@ return {
 					report_progress = true,
 					live_mode = false,
 				},
-				pyflakes = { enabled = false },
-				--[[ pylint = { enabled = false }, ]]
-				pylint = {
-					enabled = true,
-					args = {
-						"--disable=all",
-						"--enable=design",
-					},
-				},
+				pyflakes = { enabled = true },
+				pylint = { enabled = false },
 				pycodestyle = {
 					maxLineLength = 100,
 				},
