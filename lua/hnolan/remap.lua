@@ -58,7 +58,7 @@ set("t", "<Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 
 -- LSP
 set("n", "<leader>e", ":lua vim.diagnostic.open_float()<CR>", { desc = "Open LSP diagnostics" })
-set("n", "<leader>ge", ":lua vim.diagnostic.goto_next()<CR>", { desc = "Goto next LSP diagnostic" })
+set("n", "<leader>x", ":lua vim.diagnostic.goto_next()<CR>", { desc = "Goto next LSP diagnostic" })
 set({ "n", "v" }, "<leader>r", ":lua vim.lsp.buf.rename()<CR>", { desc = "LSP: Rename current object" })
 
 -- folds
