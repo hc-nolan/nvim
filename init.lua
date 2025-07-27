@@ -1,5 +1,7 @@
 require("config.lazy") -- lazy.nvim setup
 
+vim.o.swapfile = false
+
 -- Colorscheme --
 -- Gruvbox-baby: https://github.com/luisiacc/gruvbox-baby
 vim.g.gruvbox_baby_function_style = "NONE"
