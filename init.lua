@@ -3,15 +3,8 @@ require("config.lazy") -- lazy.nvim setup
 vim.o.swapfile = false
 
 -- Colorscheme --
--- Gruvbox-baby: https://github.com/luisiacc/gruvbox-baby
-vim.g.gruvbox_baby_function_style = "NONE"
-vim.g.gruvbox_baby_keyword_style = "italic"
--- Enable telescope theme
-vim.g.gruvbox_baby_telescope_theme = 1
-
-vim.o.background = "dark"
--- Load the colorscheme
-vim.cmd([[colorscheme gruvbox-baby]])
+-- vim.cmd([[colorscheme gruvbox-baby]])
+vim.cmd([[colorscheme vague]])
 
 -- lsp --
 vim.lsp.config("*", {
