@@ -6,6 +6,10 @@ vim.o.swapfile = false
 -- vim.cmd([[colorscheme gruvbox-baby]])
 vim.cmd([[colorscheme vague]])
 
+require("nvim-treesitter.configs").setup({
+	indent = { enable = true },
+})
+
 -- lsp --
 vim.lsp.config("*", {
 	capabilities = vim.lsp.protocol.make_client_capabilities(),
@@ -13,6 +17,7 @@ vim.lsp.config("*", {
 require("mason").setup() -- make sure mason is initialized
 require("mason-lspconfig").setup({
 	ensure_installed = {
+		"svelte",
 		"clangd",
 		"lua_ls",
 		"ruff",
