@@ -252,7 +252,7 @@ return {
           request = "launch",
           name = "Debug tests",
           module = "pytest",
-          args = { "${file}" },
+          args = { "-s", "${file}" },
           cwd = "${workspaceFolder}",
           env = { PYTHONPATH = "${workspaceFolder}" },
           console = "integratedTerminal",
