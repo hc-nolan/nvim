@@ -207,90 +207,93 @@
 --
 
 return {
-  {
-    "mfussenegger/nvim-dap",
-    dependencies = {
-      "nvim-neotest/nvim-nio",
-      "williamboman/mason.nvim",
-      "jay-babu/mason-nvim-dap.nvim",
-      "leoluz/nvim-dap-go",
-      "mfussenegger/nvim-dap-python",
-      "theHamsta/nvim-dap-virtual-text",
-    },
-    config = function()
-      local dap = require("dap")
-      require("mason-nvim-dap").setup({
-        -- Makes a best effort to setup the various debuggers with
-        -- reasonable debug configurations
-        automatic_installation = true,
+	{
+		"mfussenegger/nvim-dap",
+		dependencies = {
+			"nvim-neotest/nvim-nio",
+			"williamboman/mason.nvim",
+			"jay-babu/mason-nvim-dap.nvim",
+			"leoluz/nvim-dap-go",
+			"mfussenegger/nvim-dap-python",
+			"theHamsta/nvim-dap-virtual-text",
+		},
+		config = function()
+			local dap = require("dap")
+			require("mason-nvim-dap").setup({
+				-- Makes a best effort to setup the various debuggers with
+				-- reasonable debug configurations
+				automatic_installation = true,
 
-        -- You can provide additional configuration to the handlers,
-        -- see mason-nvim-dap README for more information
-        handlers = {},
+				-- You can provide additional configuration to the handlers,
+				-- see mason-nvim-dap README for more information
+				handlers = {},
 
-        -- You'll need to check that you have the required things installed
-        -- online, please don't ask me how to install them :)
-        ensure_installed = {
-          -- Update this to ensure that you have the debuggers for the langs you want
-          "delve",
-          "python",
-          "gopls",
-        },
-      })
+				-- You'll need to check that you have the required things installed
+				-- online, please don't ask me how to install them :)
+				ensure_installed = {
+					-- Update this to ensure that you have the debuggers for the langs you want
+					"delve",
+					"python",
+					"gopls",
+				},
+			})
 
-      dap.configurations.python = {
-        {
-          type = "python",
-          request = "launch",
-          name = "Launch file",
-          program = "${file}",
-          console = "integratedTerminal",
-          justMyCode = false,
-        },
-        {
-          type = "python",
-          request = "launch",
-          name = "Debug tests",
-          module = "pytest",
-          args = { "${file}" },
-          cwd = "${workspaceFolder}",
-          env = { PYTHONPATH = "${workspaceFolder}" },
-          console = "integratedTerminal",
-        },
-        {
-          type = "python",
-          request = "launch",
-          name = "Debug FastAPI",
-          module = "fastapi",
-          args = { "dev", "${file}", "--host", "0.0.0.0", "--port", "8001" },
-          cwd = "${workspaceFolder}",
-          env = { PYTHONPATH = "${workspaceFolder}" },
-          console = "integratedTerminal",
-        },
-      }
+			dap.configurations.python = {
+				{
+					type = "python",
+					request = "launch",
+					name = "Launch file",
+					program = "${file}",
+					console = "integratedTerminal",
+					justMyCode = false,
+				},
+				{
+					type = "python",
+					request = "launch",
+					name = "Debug tests",
+					module = "pytest",
+					args = { "-s", "${file}" },
+					cwd = "${workspaceFolder}",
+					env = { PYTHONPATH = "${workspaceFolder}" },
+					console = "integratedTerminal",
+				},
+				{
+					type = "python",
+					request = "launch",
+					name = "Debug specific test",
+					module = "pytest",
+					args = function()
+						local test_name = vim.fn.input("Test name: ")
+						return { "-s", "${file}::" .. test_name }
+					end,
+					cwd = "${workspaceFolder}",
+					env = { PYTHONPATH = "${workspaceFolder}" },
+					console = "integratedTerminal",
+				},
+			}
 
-      require("nvim-dap-virtual-text").setup()
+			require("nvim-dap-virtual-text").setup()
 
-      -- Install golang specific config
-      require("dap-go").setup({
-        delve = {
-          -- On Windows delve must be run attached or it crashes.
-          -- See https://github.com/leoluz/nvim-dap-go/blob/main/README.md#configuring
-          detached = vim.fn.has("win32") == 0,
-        },
-      })
+			-- Install golang specific config
+			require("dap-go").setup({
+				delve = {
+					-- On Windows delve must be run attached or it crashes.
+					-- See https://github.com/leoluz/nvim-dap-go/blob/main/README.md#configuring
+					detached = vim.fn.has("win32") == 0,
+				},
+			})
 
-      -- require('dap-python').setup("/home/hayden/venv/debugpy/bin/python")
-      require("dap-python").setup("uv")
-    end,
-  },
-  {
-    "miroshQa/debugmaster.nvim",
-    config = function()
-      local dm = require("debugmaster")
-      -- make sure you don't have any other keymaps that starts with "<leader>d" to avoid delay
-      vim.keymap.set({ "n", "v" }, "<leader>d", dm.mode.toggle, { nowait = true })
-      vim.keymap.set("t", "<C-/>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
-    end,
-  },
+			-- require('dap-python').setup("/home/hayden/venv/debugpy/bin/python")
+			require("dap-python").setup("uv")
+		end,
+	},
+	{
+		"miroshQa/debugmaster.nvim",
+		config = function()
+			local dm = require("debugmaster")
+			-- make sure you don't have any other keymaps that starts with "<leader>d" to avoid delay
+			vim.keymap.set({ "n", "v" }, "<leader>d", dm.mode.toggle, { nowait = true })
+			vim.keymap.set("t", "<C-/>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
+		end,
+	},
 }
