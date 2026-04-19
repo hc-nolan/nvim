@@ -1,33 +1,48 @@
-vim.opt.nu = true             -- line numbers
-vim.opt.relativenumber = true -- relative line numbers
+local opt = vim.opt
+opt.nu = true             -- line numbers
+opt.relativenumber = true -- relative line numbers
 
 -- indenting
-vim.opt.tabstop = 2
-vim.opt.softtabstop = 2
-vim.opt.shiftwidth = 2
-vim.opt.expandtab = true
-vim.opt.smartindent = true
+opt.tabstop = 2
+opt.softtabstop = 2
+opt.shiftwidth = 2
+opt.shiftround = true -- Round indent to multiple of shiftwidth
+opt.expandtab = true
+opt.smartindent = true
+opt.expandtab = true -- Use spaces instead of tabs
+opt.listchars = "tab: ,multispace:|   ,eol:󰌑" -- Characters to show for tabs, spaces, and end of line
 
-vim.opt.wrap = true -- line wrapping
+opt.wrap = true -- line wrapping
 
 -- custom dir for undotree
-vim.opt.undofile = true
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+opt.undofile = true
+opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 
-vim.opt.hlsearch = false
-vim.opt.incsearch = true
+opt.hlsearch = false
+opt.incsearch = true
 
-vim.opt.termguicolors = true
 
-vim.opt.scrolloff = 8
+opt.updatetime = 50
 
-vim.opt.updatetime = 50
-
-vim.opt.colorcolumn = "80"
+opt.colorcolumn = "80"
 
 vim.g.mapleader = " "
 
-vim.opt.signcolumn = "yes:1" -- show marks in gutter
+opt.signcolumn = "yes:1" -- show marks in gutter
 
-vim.o.winborder = "rounded"
+opt.winborder = "rounded"
+
+opt.signcolumn = "yes:1" -- Always show sign column
+opt.termguicolors = true -- Enable true colors
+opt.ignorecase = true -- Ignore case in search
+opt.swapfile = false -- Disable swap files
+opt.autoindent = true -- Enable auto indentation
+opt.list = true -- Show whitespace characters
+opt.numberwidth = 2 -- Width of the line number column
+opt.cursorline = true -- Highlight the current line
+opt.scrolloff = 8 -- Keep 8 lines above and below the cursor
+opt.inccommand = "nosplit" -- Shows the effects of a command incrementally in the buffer
+opt.completeopt = { "menuone", "popup", "noinsert" } -- Options for completion menu
+
+vim.cmd.filetype("plugin indent on") -- Enable filetype detection, plugins, and indentation
 
