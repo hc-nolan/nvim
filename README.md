@@ -9,16 +9,60 @@ sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
 echo 'export PATH="$PATH:/opt/nvim-linux-x86_64/bin"' >> ~/.bashrc
 source ~/.bashrc
 
-
 # Clone this repository
 git clone ssh://dev.hnolan.ca:6611/homelab/nvim.git ~/.config/nvim
+```
 
-# Install treesitter; depending on Debian or Arch based Linux
-sudo apt install -y tree-sitter-cli
-sudo pacman -S tree-sitter-cli
+## Installing misc dependencies
+
+### Debian
+
+```bash
+sudo apt install -y unzip luarocks python3-pip fd-find ripgrep pipx
+```
+
+### Arch
+
+```bash
+sudo pacman -S unzip luarocks python3-pip fd-find ripgrep pipx
+```
+
+### Regardless of distribution
+
+```bash
+curl -LO https://github.com/jesseduffield/lazygit/releases/download/v0.61.1/lazygit_0.61.1_linux_x86_64.tar.gz
+sudo tar -C /usr/local/bin -xvzf lazygit_0.61.1_linux_x86_64.tar.gz
+
+curl -fsSL https://opencode.ai/install | bash
+
+pipx ensurepath
+pipx install debugpy codespell
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+# install golang; get latest link from https://go.dev/dl/
+curl -LO https://go.dev/dl/go1.26.2.linux-amd64.tar.gz
+# change to ~/.zshrc if using zsh
+echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.bashrc
+echo "export PATH=$PATH:$HOME/go/bin" >> ~/.bashrc
+source ~/.bashrc
+
+go install golang.org/x/tools/cmd/goimports@latest
+go install github.com/go-delve/delve/cmd/dlv@latest
+
+# install nvm; get latest link from https://github.com/nvm-sh/nvm#installing-and-updating
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
+nvm install node
+
+npm install -g tree-sitter-cli
 
 ```
 
+Launch Neovim once, then run
+```bash
+cd ~/.local/share/nvim/site/pack/core/opt/blink.cmp
+cargo build --release
+```
 
 Install
 - Treesitter
