@@ -18,3 +18,24 @@ for _, dir in ipairs(plugin_dirs) do
 end
 -- end
 
+
+-- unsure if this is still needed in v0.12
+-- vim.lsp.config("*", {
+-- 	capabilities = vim.lsp.protocol.make_client_capabilities(),
+-- })
+vim.lsp.enable({
+  'svelte',
+  'lua_ls',
+  'pylsp',
+  'gopls',
+  'html',
+  'cssls',
+  'css_variables',
+  'ansiblels',
+  'yamlls',
+  'bashls',
+  'dockerls',
+  'docker_compose_language_service',
+  'ts_ls',
+})
+vim.diagnostic.config({ virtual_text = true })
