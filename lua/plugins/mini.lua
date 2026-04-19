@@ -3,5 +3,5 @@ require("mini.pairs").setup()
 require("mini.bufremove").setup()
 
 vim.keymap.set({ "n", "v" }, "<leader>bd", function()
-  require('mini.bufremove').delete(0)
-end, { desc = 'Mini: delete buffer' })
+	require("mini.bufremove").delete()
+end, { desc = "Mini: delete buffer" })
