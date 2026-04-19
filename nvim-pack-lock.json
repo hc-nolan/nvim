@@ -4,6 +4,10 @@
       "rev": "9e020fbb31b4959ea12d97afa78a90c7528ac109",
       "src": "https://github.com/pearofducks/ansible-vim"
     },
+    "blink.cmp": {
+      "rev": "c573a15a62bd0bfd4006ee0849b24f5404395500",
+      "src": "https://github.com/saghen/blink.cmp"
+    },
     "bufferline.nvim": {
       "rev": "655133c3b4c3e5e05ec549b9f8cc2894ac6f51b3",
       "src": "https://github.com/akinsho/bufferline.nvim"
@@ -15,6 +19,10 @@
     "debugmaster.nvim": {
       "rev": "505d9a269d657ce8e0fa5601e0530f0d8798038c",
       "src": "https://github.com/miroshQa/debugmaster.nvim"
+    },
+    "friendly-snippets": {
+      "rev": "6cd7280adead7f586db6fccbd15d2cac7e2188b9",
+      "src": "https://github.com/rafamadriz/friendly-snippets"
     },
     "hop.nvim": {
       "rev": "707049feaca9ae65abb3696eff9aefc7879e66aa",
