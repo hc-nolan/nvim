@@ -99,7 +99,22 @@ require('snacks').setup({
     enabled = true,
     timeout = 3000,
   },
-  picker = { enabled = true },
+  picker = {
+    enabled = true,
+    -- opencode.nvim config
+    actions = {
+      opencode_send = function(...)
+        return require('opencode').snacks_picker_send(...)
+      end,
+      win = {
+        input = {
+          keys = {
+            ["<a-a>"] = { "opencode_send", mode = { "n", "i" } },
+          },
+        },
+      },
+    },
+  },
   quickfile = { enabled = true },
 })
 
