@@ -42,6 +42,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # install golang; get latest link from https://go.dev/dl/
 curl -LO https://go.dev/dl/go1.26.2.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.26.2.linux-amd64.tar.gz
 # change to ~/.zshrc if using zsh
 echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.bashrc
 echo "export PATH=$PATH:$HOME/go/bin" >> ~/.bashrc
