@@ -1,5 +1,9 @@
 {
   "plugins": {
+    "ansible-vim": {
+      "rev": "9e020fbb31b4959ea12d97afa78a90c7528ac109",
+      "src": "https://github.com/pearofducks/ansible-vim"
+    },
     "bufferline.nvim": {
       "rev": "655133c3b4c3e5e05ec549b9f8cc2894ac6f51b3",
       "src": "https://github.com/akinsho/bufferline.nvim"
