@@ -8,19 +8,27 @@ vim.keymap.set({ "n", "v" }, "<leader>mi", "<cmd>MasonInstall<cr>", { desc = "Ma
 require("mason").setup()
 require("mason-lspconfig").setup({
 	ensure_installed = {
-		"svelte",
+		-- lua
 		"lua_ls",
+		"stylua",
+		-- python
 		"pylsp",
-		"gopls",
+		"ruff",
+		-- web
+		"svelte",
 		"html",
 		"cssls",
 		"css_variables",
+		"ts_ls",
+		-- golang
+		"gopls",
+		-- docker
+		"dockerls",
+		"docker_compose_language_service",
+		-- misc
 		"ansiblels",
 		"yamlls",
 		"bashls",
-		"dockerls",
-		"docker_compose_language_service",
-		"ts_ls",
 		"markdown_oxide",
 	},
 })
