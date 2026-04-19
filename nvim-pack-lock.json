@@ -1,5 +1,9 @@
 {
   "plugins": {
+    "SimpylFold": {
+      "rev": "ff4c85197c5555715093c08a8d4f9d493c4d80cd",
+      "src": "https://github.com/tmhedberg/SimpylFold"
+    },
     "ansible-vim": {
       "rev": "9e020fbb31b4959ea12d97afa78a90c7528ac109",
       "src": "https://github.com/pearofducks/ansible-vim"
