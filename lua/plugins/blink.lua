@@ -1,9 +1,11 @@
 vim.pack.add({
 	{ src = "https://github.com/rafamadriz/friendly-snippets" },
+	{ src = "https://github.com/saghen/blink.lib" },
 	{ src = "https://github.com/saghen/blink.cmp" },
 })
-
-require("blink.cmp").setup({
+local blink = require("blink.cmp")
+blink.build():wait(60000)
+blink.setup({
 	signature = { enabled = true },
 	enabled = function()
 		local disabled_filetypes = { "neo-tree-popup" }
