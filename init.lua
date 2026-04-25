@@ -23,9 +23,10 @@ end
 -- 	capabilities = vim.lsp.protocol.make_client_capabilities(),
 -- })
 vim.lsp.enable({
+	"ty",
 	"svelte",
 	"lua_ls",
-	"pylsp",
+	-- "pylsp",
 	"gopls",
 	"html",
 	"cssls",

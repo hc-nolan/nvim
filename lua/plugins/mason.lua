@@ -12,7 +12,7 @@ require("mason-lspconfig").setup({
 		"lua_ls",
 		"stylua",
 		-- python
-		"pylsp",
+		-- "pylsp",   swapped for ty
 		"ruff",
 		-- web
 		"svelte",
