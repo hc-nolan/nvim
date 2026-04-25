@@ -1,40 +1,40 @@
 vim.pack.add({
-  { src = "https://github.com/nvim-treesitter/nvim-treesitter" , type = "start" },
+	{ src = "https://github.com/nvim-treesitter/nvim-treesitter", type = "start" },
 })
 require("nvim-treesitter").setup({
-  ensure_installed = {
-
-  },
-  highlight = { enable = true },
-  build = function()
-    require("nvim-treesitter.install").update({ with_sync = true })()
-  end,
-  indent = { enable = true },
+	ensure_installed = {},
+	highlight = { enable = true },
+	build = function()
+		require("nvim-treesitter.install").update({ with_sync = true })()
+	end,
+	indent = { enable = true },
 })
 
-require("nvim-treesitter").install {
-  "rust",
-  "lua",
-  "python",
-  "go",
-  "javascript",
-  "html",
-  "css",
-  "yaml",
-  "scss",
-  "comment",
-  "cpp",
-  "c",
-  "csv",
-  "diff",
-  "dockerfile",
-  "gomod",
-  "gosum",
-  "php",
-  "toml",
-  "tsx",
-  "typescript",
-  "vimdoc",
-  "vim",
-  "zig",
-}
+require("nvim-treesitter").install({
+	"markdown",
+	"markdown_inline",
+	"rust",
+	"lua",
+	"python",
+	"go",
+	"javascript",
+	"html",
+	"css",
+	"yaml",
+	"scss",
+	"comment",
+	"cpp",
+	"c",
+	"csv",
+	"diff",
+	"dockerfile",
+	"gomod",
+	"gosum",
+	"php",
+	"toml",
+	"tsx",
+	"typescript",
+	"vimdoc",
+	"vim",
+	"zig",
+})
