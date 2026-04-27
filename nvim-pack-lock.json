@@ -9,7 +9,7 @@
       "src": "https://github.com/pearofducks/ansible-vim"
     },
     "blink.cmp": {
-      "rev": "e1dbca9ea1d8dc7a83e27a52bbd990bd717e54a6",
+      "rev": "03c11da4349d44ea582c363bc9c75fe0b3a5d2ef",
       "src": "https://github.com/saghen/blink.cmp"
     },
     "blink.lib": {
@@ -57,7 +57,7 @@
       "src": "https://github.com/jay-babu/mason-nvim-dap.nvim"
     },
     "mason.nvim": {
-      "rev": "12ddd182d9efbdc848b540f16484a583d52da0fb",
+      "rev": "cb8445f8ce85d957416c106b780efd51c6298f89",
       "src": "https://github.com/williamboman/mason.nvim"
     },
     "mini.icons": {
@@ -65,7 +65,7 @@
       "src": "https://github.com/nvim-mini/mini.icons"
     },
     "mini.nvim": {
-      "rev": "4f6f84a96b076747b736d100388a8d7844771d7d",
+      "rev": "be81509b7160aa02264a59789164a2e1c4a6750a",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "neogen": {
@@ -93,7 +93,7 @@
       "src": "https://github.com/theHamsta/nvim-dap-virtual-text"
     },
     "nvim-lspconfig": {
-      "rev": "8fde495949782bb61c2605174e231d145a048d8c",
+      "rev": "eeef061d58d759b5419c1e20c4b3a5bc3154f871",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-nio": {
@@ -109,7 +109,7 @@
       "src": "https://github.com/windwp/nvim-ts-autotag"
     },
     "nvim-web-devicons": {
-      "rev": "c72328a5494b4502947a022fe69c0c47e53b6aa6",
+      "rev": "8069e89df2d7259704286a5906a11c5b27d5b440",
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
     },
     "obsidian.nvim": {
@@ -117,7 +117,7 @@
       "src": "https://github.com/epwalsh/obsidian.nvim"
     },
     "opencode.nvim": {
-      "rev": "ceb03717b7bb2060d8d3504b8d56017035f0edcc",
+      "rev": "0e3ae21c6c4c8def63e3503b238870f1251288e4",
       "src": "https://github.com/nickjvandyke/opencode.nvim"
     },
     "plenary.nvim": {
@@ -125,7 +125,7 @@
       "src": "https://github.com/nvim-lua/plenary.nvim"
     },
     "render-markdown.nvim": {
-      "rev": "d67113f11384c0dad96fced2f7b91f1fc811e97f",
+      "rev": "3f3eea97b80839f629c951ca660ffd125bfa5b34",
       "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
     },
     "snacks.nvim": {
@@ -157,7 +157,7 @@
       "src": "https://github.com/moll/vim-bbye"
     },
     "wayfinder.nvim": {
-      "rev": "bf90b405ef49f297a8e1db6a60fb0c3717e2ca8d",
+      "rev": "455450be2abe3e55143adb26350728a2f5ad8e73",
       "src": "https://github.com/error311/wayfinder.nvim"
     },
     "which-key.nvim": {
@@ -165,7 +165,7 @@
       "src": "https://github.com/folke/which-key.nvim"
     },
     "yazi.nvim": {
-      "rev": "3ef2cd509e8b44bb4436e78834007f6342c7aaa5",
+      "rev": "ef7719919e797e5596b19640a092155012cb9a9c",
       "src": "https://github.com/mikavilpas/yazi.nvim"
     }
   }

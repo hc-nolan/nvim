@@ -40,3 +40,7 @@ vim.lsp.enable({
 	"markdown_oxide",
 })
 vim.diagnostic.config({ virtual_text = true })
+
+vim.api.nvim_create_user_command("Update", function()
+	vim.pack.update()
+end, { desc = "vim.pack - Update plugins" })
