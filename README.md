@@ -53,10 +53,14 @@ go install github.com/go-delve/delve/cmd/dlv@latest
 
 # install nvm; get latest link from https://github.com/nvm-sh/nvm#installing-and-updating
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
+
+source ~/.bashrc
 nvm install node
 
 npm install -g tree-sitter-cli
 
+curl -LsSf https://astral.sh/uv/install.sh | sh
+source ~/.bashrc
 uv tool install ty@latest
 ```
 
