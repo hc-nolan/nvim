@@ -6,6 +6,7 @@ vim.pack.add({
 
 require("snacks").setup({
 	bigfile = { enabled = true },
+	image = {},
 	dashboard = {
 		width = 60,
 		row = nil,
