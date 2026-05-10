@@ -6,7 +6,7 @@ require("zeal").setup({
 	docsets_path = vim.fn.expand("~/.local/share/Zeal/Zeal/docsets"), -- zeal docset locations
 	browser = "w3m", -- can be any terminal browser
 	split = "vsplit", -- used when use_toggleterm = false
-	use_toggleterm = false,
+	use_toggleterm = true,
 	-- toggleterm specifc options
 	-- see https://github.com/akinsho/toggleterm.nvim/tree/main
 	toggleterm = {
