@@ -8,10 +8,6 @@
       "rev": "9e020fbb31b4959ea12d97afa78a90c7528ac109",
       "src": "https://github.com/pearofducks/ansible-vim"
     },
-    "atlas.nvim": {
-      "rev": "8ad154ce7ac82563c5aea39878b0b401d9eaf59e",
-      "src": "https://github.com/emrearmagan/atlas.nvim"
-    },
     "blink.cmp": {
       "rev": "d3874d2a13aa19b095bdd10d37a82a8f0aa7cad3",
       "src": "https://github.com/saghen/blink.cmp"
@@ -31,10 +27,6 @@
     "debugmaster.nvim": {
       "rev": "505d9a269d657ce8e0fa5601e0530f0d8798038c",
       "src": "https://github.com/miroshQa/debugmaster.nvim"
-    },
-    "diffview.nvim": {
-      "rev": "4516612fe98ff56ae0415a259ff6361a89419b0a",
-      "src": "https://github.com/sindrets/diffview.nvim"
     },
     "friendly-snippets": {
       "rev": "6cd7280adead7f586db6fccbd15d2cac7e2188b9",
@@ -83,10 +75,6 @@
     "neogen": {
       "rev": "23e7e9f883d01289ebd90e98025acc860ea26366",
       "src": "https://github.com/danymat/neogen"
-    },
-    "noice.nvim": {
-      "rev": "7bfd942445fb63089b59f97ca487d605e715f155",
-      "src": "https://github.com/folke/noice.nvim"
     },
     "nui.nvim": {
       "rev": "de740991c12411b663994b2860f1a4fd0937c130",
