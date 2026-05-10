@@ -52,7 +52,7 @@ set({ "n", "v" }, "<leader>wt", "<C-w>T")
 -- TERMINALS
 set({ "n", "v" }, "<leader>tv", ":vsplit term://zsh<CR>a", { desc = "Open terminal in vertical split" })
 set({ "n", "v" }, "<leader>th", ":split term://zsh<CR>a", { desc = "Open terminal in horizontal split" })
-set({ "n", "v" }, "<leader>tt", ":term zsh<CR>a", { desc = "Open terminal in new buffer" })
+-- set({ "n", "v" }, "<leader>tt", ":term zsh<CR>a", { desc = "Open terminal in new buffer" })
 -- map <Esc> to exit terminal mode
 set("t", "<Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 
