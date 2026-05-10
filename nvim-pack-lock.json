@@ -156,6 +156,10 @@
       "rev": "f04ab730b8f9c6bf3f54a206d0dcddfd70c52d59",
       "src": "https://github.com/nvim-telescope/telescope.nvim"
     },
+    "toggleterm.nvim": {
+      "rev": "9a88eae817ef395952e08650b3283726786fb5fb",
+      "src": "https://github.com/akinsho/toggleterm.nvim"
+    },
     "trouble.nvim": {
       "rev": "bd67efe408d4816e25e8491cc5ad4088e708a69a",
       "src": "https://github.com/folke/trouble.nvim"
@@ -183,6 +187,10 @@
     "yazi.nvim": {
       "rev": "aada50881aca7d13422e02a6681b8f0a0ec9a75c",
       "src": "https://github.com/mikavilpas/yazi.nvim"
+    },
+    "zeal.nvim": {
+      "rev": "a3aa0c73ad0b30f75e8c77d3ccabefaeabded894",
+      "src": "https://github.com/paradoxical-dev/zeal.nvim"
     }
   }
 }
