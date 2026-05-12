@@ -9,7 +9,7 @@
       "src": "https://github.com/pearofducks/ansible-vim"
     },
     "atlas.nvim": {
-      "rev": "8ad154ce7ac82563c5aea39878b0b401d9eaf59e",
+      "rev": "deef25764dc12c52dc3785a1160340f40fdb9af3",
       "src": "https://github.com/emrearmagan/atlas.nvim"
     },
     "blink.cmp": {
@@ -61,7 +61,7 @@
       "src": "https://github.com/nvim-lualine/lualine.nvim"
     },
     "mason-lspconfig.nvim": {
-      "rev": "0c2823e0418f3d9230ff8b201c976e84de1cb401",
+      "rev": "51feb0ada33d18f3c5c71ffb46005dbf8b33bef4",
       "src": "https://github.com/williamboman/mason-lspconfig.nvim"
     },
     "mason-nvim-dap.nvim": {
@@ -69,7 +69,7 @@
       "src": "https://github.com/jay-babu/mason-nvim-dap.nvim"
     },
     "mason.nvim": {
-      "rev": "cb8445f8ce85d957416c106b780efd51c6298f89",
+      "rev": "e54f5bf5f12c560da31c17eee5b3e1bd369f3ff9",
       "src": "https://github.com/williamboman/mason.nvim"
     },
     "mini.icons": {
@@ -77,7 +77,7 @@
       "src": "https://github.com/nvim-mini/mini.icons"
     },
     "mini.nvim": {
-      "rev": "48555f1615f08c6318150aacb52bf7d61a5af798",
+      "rev": "60b5aaac2f0465d67699702e76b9baebf52cb42f",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "neogen": {
@@ -113,7 +113,7 @@
       "src": "https://github.com/theHamsta/nvim-dap-virtual-text"
     },
     "nvim-lspconfig": {
-      "rev": "31026a13eefb20681124706a79fc1df6bf11ab27",
+      "rev": "451d4ef9abd4f0f08e379ef0d55d1c391b6125a7",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-nio": {
@@ -133,7 +133,7 @@
       "src": "https://github.com/windwp/nvim-ts-autotag"
     },
     "nvim-web-devicons": {
-      "rev": "4fc505ac7bd7692824a142e96e5f529c133862f8",
+      "rev": "2795c26c916bb3c57dde308b82be51971fa92747",
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
     },
     "obsidian.nvim": {
@@ -141,15 +141,19 @@
       "src": "https://github.com/epwalsh/obsidian.nvim"
     },
     "opencode.nvim": {
-      "rev": "5ba16632fe3a7f66958f08dc008b74e626d55328",
+      "rev": "0dd88243b151b25e291e714d572d303a694b5f7c",
       "src": "https://github.com/nickjvandyke/opencode.nvim"
     },
     "plenary.nvim": {
       "rev": "74b06c6c75e4eeb3108ec01852001636d85a932b",
       "src": "https://github.com/nvim-lua/plenary.nvim"
     },
+    "precognition.nvim": {
+      "rev": "c3f59cdf0296ce94e7e0ff321fe1b27f5f2045c1",
+      "src": "https://github.com/tris203/precognition.nvim"
+    },
     "render-markdown.nvim": {
-      "rev": "3f3eea97b80839f629c951ca660ffd125bfa5b34",
+      "rev": "629eb9533ec989d9d5c6cab8f3ad5372422c24e0",
       "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
     },
     "snacks.nvim": {
@@ -157,11 +161,11 @@
       "src": "https://github.com/folke/snacks.nvim"
     },
     "submarine.nvim": {
-      "rev": "59b64e42b4127dfbf9d17f2c9fdc45106005674b",
+      "rev": "98aca814fa74a18871c7fa6a4081d85a772adba7",
       "src": "https://github.com/hc-nolan/submarine.nvim"
     },
     "tablature.nvim": {
-      "rev": "a227a29cea18048057a9a82216abdf5b494c62b6",
+      "rev": "b03fb13e5d0da6b44cad6ba84d85908d0fe683e6",
       "src": "https://github.com/hc-nolan/tablature.nvim"
     },
     "telescope.nvim": {
@@ -189,7 +193,7 @@
       "src": "https://github.com/moll/vim-bbye"
     },
     "wayfinder.nvim": {
-      "rev": "20ae04106040f2fb2a6ec0bfbd014e770b0f5505",
+      "rev": "bd9520a9ba2f71375cec82590fee8b551ca4b990",
       "src": "https://github.com/error311/wayfinder.nvim"
     },
     "which-key.nvim": {
@@ -197,12 +201,12 @@
       "src": "https://github.com/folke/which-key.nvim"
     },
     "yazi.nvim": {
-      "rev": "aada50881aca7d13422e02a6681b8f0a0ec9a75c",
+      "rev": "e7259dc1224a2f9b143c4c536913d1501bdc05e8",
       "src": "https://github.com/mikavilpas/yazi.nvim"
     },
     "zeal.nvim": {
-      "rev": "a3aa0c73ad0b30f75e8c77d3ccabefaeabded894",
-      "src": "https://github.com/paradoxical-dev/zeal.nvim"
+      "rev": "3e4dca5b104d7670e0445d8d58e656925a70cc9e",
+      "src": "https://github.com/hc-nolan/zeal.nvim"
     }
   }
 }
