@@ -7,7 +7,7 @@ vim.keymap.set("n", "<leader>xx", "<cmd>Trouble diagnostics toggle<cr>", { desc 
 vim.keymap.set(
 	"n",
 	"<leader>ls",
-	"<cmd>Trouble lsp_document_symbols win.position=right<cr>",
+	"<cmd>Trouble lsp_document_symbols toggle win.position=right<cr>",
 	{ desc = "Trouble: Toggle LSP document symbols " }
 )
 vim.keymap.set(
