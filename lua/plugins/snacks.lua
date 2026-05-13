@@ -7,6 +7,7 @@ vim.pack.add({
 require("snacks").setup({
 	bigfile = { enabled = true },
 	image = {},
+	gh = {},
 	dashboard = {
 		width = 60,
 		row = nil,
@@ -123,6 +124,8 @@ require("snacks").setup({
 				ignored = false,
 				hidden = false,
 			},
+			gh_issue = {},
+			gh_pr = {},
 		},
 	},
 	quickfile = { enabled = true },
@@ -153,6 +156,15 @@ end, { desc = "Snacks: git log" })
 vim.keymap.set("n", "<leader>gf", function()
 	Snacks.picker.git_files()
 end, { desc = "Snacks: git files" })
+vim.keymap.set("n", "<leader>gh", function()
+	Snacks.picker.gitbrowse()
+end, { desc = "Snacks: git browse" })
+vim.keymap.set("n", "<leader>gi", function()
+	Snacks.picker.gh_issue()
+end, { desc = "Snacks: git issues" })
+vim.keymap.set("n", "<leader>gp", function()
+	Snacks.picker.gh_pr()
+end, { desc = "Snacks: git PRs" })
 
 vim.keymap.set("n", "<leader>fc", function()
 	Snacks.picker.commands()
