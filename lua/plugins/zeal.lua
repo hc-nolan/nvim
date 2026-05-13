@@ -14,11 +14,17 @@ require("zeal").setup({
 		split_size = vim.o.columns * 0.5, -- when direction != float
 	},
 	picker = {
-		type = "default", -- default | snacks
+		type = "snacks", -- default | snacks
+		-- type = "default", -- default | snacks
 		-- snacks picker specific options.
 		-- see https://github.com/folke/snacks.nvim/blob/main/docs/picker.md
 		snacks = {
 			layout = "default",
+			manager_keymaps = {
+				toggle = "T",
+				select = " ",
+				confirm = "<CR>",
+			},
 		},
 	},
 	ft_map = {
@@ -38,3 +44,7 @@ vim.keymap.set({ "n", "v" }, "<leader>zz", function()
 		zeal.search()
 	end
 end, { desc = "Zeal: Search" })
+
+vim.keymap.set({ "n", "v" }, "<leader>zm", function()
+	require("zeal").manager()
+end, { desc = "Zeal: Open manager" })
