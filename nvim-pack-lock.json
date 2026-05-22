@@ -136,10 +136,6 @@
       "rev": "74b06c6c75e4eeb3108ec01852001636d85a932b",
       "src": "https://github.com/nvim-lua/plenary.nvim"
     },
-    "precognition.nvim": {
-      "rev": "c3f59cdf0296ce94e7e0ff321fe1b27f5f2045c1",
-      "src": "https://github.com/tris203/precognition.nvim"
-    },
     "render-markdown.nvim": {
       "rev": "629eb9533ec989d9d5c6cab8f3ad5372422c24e0",
       "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
